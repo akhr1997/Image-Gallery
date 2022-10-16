@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    /* max-width: 1600px; */
+    /* padding: 50px 20px; */
+    /* margin: 0 auto; */
+}
+
+.galleryImg{
+    max-width: 100%;
+    border-radius: 10%;
+    position: relative;
+    transition: transform 250ms;
+    cursor: pointer;
+}
+
+#gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px
+}
+
+.galleryImg:hover{
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 10px black;
+}
+
+#popup{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 300ms transform;
+    padding: 50px;
+}
+
+#selectedImage{
+    max-height: 100%;
+}
+/* yoguty
+spinach
+milk
+tomato
+onion
+beets
+cabbage
+tea green
+cauliflower
+aloo
+capcium */
